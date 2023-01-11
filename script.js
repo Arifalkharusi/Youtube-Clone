@@ -26,7 +26,7 @@ const datePublished = function (date) {
   // days
   if (timePassed < 7) return `${Math.floor(timePassed)} days ago`;
   timePassed = timePassed / 7;
-  // wekks
+  // weeks
   if (timePassed < 4) return `${Math.floor(timePassed)} weeks ago`;
   timePassed = timePassed / 4;
   // months

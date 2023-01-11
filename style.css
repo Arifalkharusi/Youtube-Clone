@@ -10,10 +10,6 @@ body {
   font-family: roboto, arial;
 }
 
-.hidden {
-  display: none;
-}
-
 /* Header */
 .header {
   height: 55px;
@@ -332,6 +328,10 @@ iframe {
   height: 70%;
   width: 100%;
   margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Responsive */
