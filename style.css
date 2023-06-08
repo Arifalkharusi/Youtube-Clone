@@ -12,6 +12,7 @@ body {
 
 /* Header */
 .header {
+  z-index: 100;
   height: 55px;
   display: flex;
   justify-content: space-between;
@@ -177,6 +178,7 @@ body {
 .watch-info-grid {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .watch-info-left,
 .watch-info-right {
@@ -238,7 +240,6 @@ body {
 
 .thumbnail {
   width: 100%;
-  border-radius: 20px;
 }
 .chan {
   border-radius: 50%;
@@ -323,11 +324,20 @@ body {
 .recon-info {
   width: 200px;
 }
+
+.vid-frame {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 20px;
+}
 iframe {
   border: none;
-  height: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin-bottom: 20px;
+  height: 100%;
 }
 
 .hidden {

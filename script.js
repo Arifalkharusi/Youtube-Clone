@@ -134,11 +134,15 @@ const mainFunc = async function (search, div) {
       watch.classList.remove("hidden");
       mainMain.classList.add("hidden");
       mainWatch.innerHTML = "";
-      const html2 = ` <iframe
+      const html2 = `
+      <div class='vid-frame'>
+      <iframe
         allow='autoplay'
+        allowfullscreen
         src="https://www.youtube.com/embed/${linkArray[i]}?autoplay=1"
       >
       </iframe>
+      </div>
       <h1>${titleArray[i]}</h1>
       <div class="watch-info-grid">
       <div class="watch-info-left">
@@ -156,8 +160,6 @@ const mainFunc = async function (search, div) {
           <i class="fa-regular fa-thumbs-down"></i>
           </div>
           <p><i class="fa-solid fa-share"></i> Share</p>
-          <p><i class="fa-solid fa-arrow-down"></i> Download</p>
-          <p><i class="fa-regular fa-heart"></i> Thanks</p>
           <p><i class="fa-solid fa-scissors"></i> Clip</p>
           <i class="fa-solid fa-ellipsis"></i>
 
